@@ -2,12 +2,7 @@ FROM nginx:stable
 
 MAINTAINER AttractGroup
 
-RUN apt-get update && apt-get install -y --no-install-recommends
-    curl \
-    nodejs \
-    nodejs-legacy \
-    npm \
-    git
+RUN apt-get update && apt-get install -y --no-install-recommends curl nodejs nodejs-legacy npm git
 
 ARG PROJECT_ENV
 
