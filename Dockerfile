@@ -4,8 +4,6 @@ MAINTAINER AttractGroup
 
 RUN apt-get update && apt-get install -y --no-install-recommends curl nodejs nodejs-legacy npm git
 
-ARG PROJECT_ENV
-
 RUN npm install -g gulp
 
 COPY ./package.json /tmp/package.json
