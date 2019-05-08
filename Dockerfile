@@ -1,8 +1,8 @@
-FROM nginx:stable
+FROM nginx:stable-perl
 
 MAINTAINER AttractGroup
 
-RUN apt-get update && apt-get install -y --no-install-recommends curl git
+RUN apt-get update && apt-get install -y --no-install-recommends curl git libgd-dev
 
 RUN apt-get install -y curl software-properties-common gnupg
 
